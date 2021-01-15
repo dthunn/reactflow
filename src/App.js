@@ -1,11 +1,5 @@
 import React from 'react'
-import ReactFlow, {
-  removeElements,
-  addEdge,
-  MiniMap,
-  Controls,
-  Background,
-} from 'react-flow-renderer'
+import ReactFlow, { Background } from 'react-flow-renderer'
 
 const elements = [
   {
@@ -34,7 +28,7 @@ const elements = [
 
 const App = () => (
   <div class='container'>
-    <ReactFlow elements={elements} snapToGrid={true} snapGrid={[15, 15]}>
+    <ReactFlow elements={elements} snapToGrid={true}>
       <Background color='#aaa' gap={16} />
     </ReactFlow>
   </div>
